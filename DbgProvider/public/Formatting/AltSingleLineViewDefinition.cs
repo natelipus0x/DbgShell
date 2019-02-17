@@ -26,6 +26,13 @@ namespace MS.Dbg.Formatting
             if( captureContext )
                 Context = DbgProvider.CapturePsContext();
         } // end constructor
+
+
+        bool IFormatInfo.LooksLikeExistingFromPropertyDefinition( IFormatInfo other )
+        {
+            Util.Fail( "nobody should be calling this..." );
+            return false;
+        }
     } // end class AltSingleLineViewDefinition
 }
 
